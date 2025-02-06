@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", serif;
+}
+
+.wrapper {
+    min-height: 100svh;
+    max-width: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    margin-bottom: 1rem;
+    color: #002333;
+}
+
+.form{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    margin-bottom: 1rem;
+}
+.form__input{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    border: solid 3px #159A9C;
+
+    font-size: 20px;
+    padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.delete-btn{
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.result{
+    font-size: 2em;
+    margin-bottom: 1rem;
+    color: #002333;
+}
+
+.list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    list-style: none;
+    width: 350px;
+    text-align: center;
+    padding-bottom: 0.2em;
+
+    margin-bottom: 10px;
+
+    background-color: #DEEFE7;
+    padding: 1em 1.5em;
+    border-radius: 50px;
+
+    border: 2px solid #159A9C;
+}
+
+.delete-btn{
+    margin-left: auto;
+    margin-right: 0;
+
+    cursor: pointer;
+}
+
+.delete-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.set-btn{
+    outline: none;
+    border: none;
+    background: none;
+    margin-bottom: 1rem;
+
+    font-size: 1em;
+    color: #002333;
+
+    background-color: #DEEFE7;
+    padding: 1em 2em;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.set-btn svg {
+    width: 20px;
+    height: 20px;
+}
